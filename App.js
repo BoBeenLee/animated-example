@@ -1,12 +1,13 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Carousel from './src/components/AnimatedCarousel';
+import Animation from './src/components/Animation';
 
 export default class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <Carousel />
+        <Animation />
       </SafeAreaView>
     );
   }
@@ -14,9 +15,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff'
   },
 });
